@@ -7,7 +7,7 @@
   "database": {
     "client": "sqlite3",
     "connection": {
-      "filename": "/home/ladmin/ghost/content/data/ghost-local.db"
+      "filename": "/home/ladmin/mikehathaway.com/content/data/ghost-local.db"
     }
   },
   "mail": {
@@ -21,6 +21,6 @@
   },
   "process": "local",
   "paths": {
-    "contentPath": "/home/ladmin/ghost/content"
+    "contentPath": "/home/ladmin/mikehathaway.com/content"
   }
 }
