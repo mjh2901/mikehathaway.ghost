@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Host your ghost site on GitHub</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=d2b0c6e553" />
+
+    <link rel="canonical" href="https://mikehathaway.com/host-your-ghost-site-on-github/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://mikehathaway.com/host-your-ghost-site-on-github/amp/" />
+    
+    <meta property="og:site_name" content="Mike Hathaway" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Host your ghost site on GitHub" />
+    <meta property="og:description" content="Let GitHub pay your hosting bill GitHub Pages is one of those features that is extremely that I think many do not realize the power and potential of.  Git hub pages hosts static content, the internal pages you can create for projects or in repositories uses Jekyll a static site" />
+    <meta property="og:url" content="https://mikehathaway.com/host-your-ghost-site-on-github/" />
+    <meta property="og:image" content="https://mikehathaway.com/content/images/2021/10/ghost_on_github.png" />
+    <meta property="article:published_time" content="2021-10-06T19:28:00.000Z" />
+    <meta property="article:modified_time" content="2021-10-08T04:35:03.000Z" />
+    <meta property="article:tag" content="Ghost" />
+    <meta property="article:tag" content="Github" />
+    <meta property="article:tag" content="How To" />
+    <meta property="article:tag" content="Install" />
+    
+    <meta property="article:publisher" content="https://www.facebook.com/mikehathaway" />
+    <meta property="article:author" content="https://www.facebook.com/mikehathaway" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Host your ghost site on GitHub" />
+    <meta name="twitter:description" content="Let GitHub pay your hosting bill GitHub Pages is one of those features that is extremely that I think many do not realize the power and potential of.  Git hub pages hosts static content, the internal pages you can create for projects or in repositories uses Jekyll a static site" />
+    <meta name="twitter:url" content="https://mikehathaway.com/host-your-ghost-site-on-github/" />
+    <meta name="twitter:image" content="https://mikehathaway.com/content/images/2021/10/ghost_on_github.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Mike Hathaway" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Ghost, Github, How To, Install" />
+    <meta name="twitter:site" content="@mikehathaway" />
+    <meta name="twitter:creator" content="@mikehathaway" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Mike Hathaway",
+        "url": "https://mikehathaway.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://mikehathaway.com/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Mike Hathaway",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/2f7d8a3a1c43e2ac7fdc78fa07b90cd6?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://mikehathaway.com/author/mike/",
+        "sameAs": [
+            "https://mikehathaway.com",
+            "https://www.facebook.com/mikehathaway",
+            "https://twitter.com/mikehathaway"
+        ]
+    },
+    "headline": "Host your ghost site on GitHub",
+    "url": "https://mikehathaway.com/host-your-ghost-site-on-github/",
+    "datePublished": "2021-10-06T19:28:00.000Z",
+    "dateModified": "2021-10-08T04:35:03.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://mikehathaway.com/content/images/2021/10/ghost_on_github.png",
+        "width": 1920,
+        "height": 1080
+    },
+    "keywords": "Ghost, Github, How To, Install",
+    "description": "Let GitHub pay your hosting bill\n\nGitHub Pages is one of those features that is extremely that I think many do not\nrealize the power and potential of.  Git hub pages hosts static content, the\ninternal pages you can create for projects or in repositories uses Jekyll a\nstatic site generator.  However GitHub can serve up data from just about any\nstatic site generator as long as the files are in a repo.  This website uses\nGhost, then uses the Ghost Static Site Generator to create the site and git to",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mikehathaway.com/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.16" />
+    <link rel="alternate" type="application/rss+xml" title="Mike Hathaway" href="https://mikehathaway.com/rss/" />
+    <script defer src="https://unpkg.com/@tryghost/portal@~1.10.0/umd/portal.min.js" data-ghost="https://mikehathaway.com/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><style>:root {--ghost-accent-color: #000000;}</style>
+
+</head>
+<body class="post-template tag-ghost-tag tag-github tag-how-to tag-install">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head has-cover">
+        <nav class="gh-head-inner inner gh-container">
+
+            <div class="gh-head-brand">
+                <a class="gh-head-logo" href="https://mikehathaway.com">
+                        Mike Hathaway
+                </a>
+                <a class="gh-burger" role="button">
+                    <div class="gh-burger-box">
+                        <div class="gh-burger-inner"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-home"><a href="https://mikehathaway.com/">Home</a></li>
+    <li class="nav-about"><a href="https://mikehathaway.com/about/">About</a></li>
+    <li class="nav-resume"><a href="https://mikehathaway.com/resume/">Resume</a></li>
+    <li class="nav-contact"><a href="https://mikehathaway.com/contact/">Contact</a></li>
+</ul>
+
+            </div>
+            <div class="gh-head-actions">
+                <div class="gh-social">
+                        <a class="gh-social-facebook" href="https://www.facebook.com/mikehathaway" title="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm5.204 4.911h-3.546c-2.103 0-4.443.885-4.443 3.934.01 1.062 0 2.08 0 3.225h-2.433v3.872h2.509v11.147h4.61v-11.22h3.042l.275-3.81h-3.397s.007-1.695 0-2.187c0-1.205 1.253-1.136 1.329-1.136h2.054V4.911z" /></svg></a>
+                        <a class="gh-social-twitter" href="https://twitter.com/mikehathaway" title="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+                </div>
+
+                    <a class="gh-head-button" href="#/portal/signup">Subscribe</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="site-content">
+        
+
+
+
+<main id="site-main" class="site-main">
+    <article class="article post tag-ghost-tag tag-github tag-how-to tag-install featured">
+
+        <header class="article-header gh-canvas">
+
+            <section class="article-tag">
+                <a href="https://mikehathaway.com/tag/ghost-tag/">Ghost</a>
+            </section>
+
+            <h1 class="article-title">Host your ghost site on GitHub</h1>
+
+
+            <div class="article-byline">
+                <section class="article-byline-content">
+                    <ul class="author-list">
+                        <li class="author-list-item">
+                            <a href="/author/mike/" class="author-avatar">
+                                <img class="author-profile-image" src="//www.gravatar.com/avatar/2f7d8a3a1c43e2ac7fdc78fa07b90cd6?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Mike Hathaway" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="article-byline-meta">
+                        <h4 class="author-name"><a href="/author/mike/">Mike Hathaway</a></h4>
+                        <div class="byline-meta-content">
+                            <time class="byline-meta-date" datetime="2021-10-06">Oct 6, 2021</time>
+                            <span class="byline-reading-time"><span class="bull">&bull;</span> 5 min read</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <figure class="article-image">
+                <img
+                    srcset="/content/images/size/w300/2021/10/ghost_on_github.png 300w,
+                            /content/images/size/w600/2021/10/ghost_on_github.png 600w,
+                            /content/images/size/w1000/2021/10/ghost_on_github.png 1000w,
+                            /content/images/size/w2000/2021/10/ghost_on_github.png 2000w"
+                    sizes="(min-width: 1400px) 1400px, 92vw"
+                    src="/content/images/size/w2000/2021/10/ghost_on_github.png"
+                    alt="Host your ghost site on GitHub"
+                />
+            </figure>
+        </header>
+
+        <section class="gh-content gh-canvas">
+            <p>Let GitHub pay your hosting bill</p><p>GitHub Pages is one of those features that is extremely that I think many do not realize the power and potential of.  Git hub pages hosts static content, the internal pages you can create for projects or in repositories uses Jekyll a static site generator.  However GitHub can serve up data from just about any static site generator as long as the files are in a repo.  This website uses Ghost, then uses the Ghost Static Site Generator to create the site and git to push the changes to a repo.  All of this is done by a 5 line bash script.  GitHub then serves it up using a domain hosted on Cloud Flare.  These instructions are how to set up this system.</p><p>For or these instructions I am starting with a fresh RockyLinux install per the <a href="https://mikehathaway.com/rocky-linux-install/">Rocky Linux, Install</a> tutorial. </p><p>This tutorial is in several sections</p><ol><li>Setup Node.js</li><li>Setup Ghost &amp; Ghost Static Site Generator</li><li>Setup and start a ghost website</li><li>Setup GitHub</li><li>Setup Script</li></ol><p>Ghost runs on Node.js and version 14 of node has the lease amount of issues with this specific setup.  The assumption for these instruction is you are using an admin user with sudo privilages but not the root account.</p><ol><li>Install Node.js &amp; Wget on Rocky Linux</li></ol><pre><code>sudo dnf update
+sudo dnf install wget
+sudo dnf module list nodejs
+sudo dnf module install nodejs:14
+node -v</code></pre><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-12.38.58-PM.png" class="kg-image" alt loading="lazy" width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-06-at-12.38.58-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-06-at-12.38.58-PM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-12.38.58-PM.png 1120w" sizes="(min-width: 720px) 720px"></figure><p>2. Setup Ghost &amp; Ghost Static Site Generator</p><p>We will be install the ghost-cli and use that cli to deploy ghost.</p><pre><code>sudo npm install ghost-cli@latest -g
+sudo npm install -g ghost-static-site-generator</code></pre><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.06.25-PM.png" class="kg-image" alt loading="lazy" width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-06-at-2.06.25-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-06-at-2.06.25-PM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.06.25-PM.png 1120w" sizes="(min-width: 720px) 720px"></figure><p>3. Setup and start a ghost website</p><p>From the user home directory create a folder for the ghost site.  Then enter that directory and install ghost, which will also activate the ghost server. </p><pre><code>mkdir mysite.ghost
+cd mysite.ghost
+ghost install local
+</code></pre><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.12.17-PM.png" class="kg-image" alt loading="lazy" width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-06-at-2.12.17-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-06-at-2.12.17-PM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.12.17-PM.png 1120w" sizes="(min-width: 720px) 720px"></figure><p>There are two things you may need to do.  First is open port 2368 on your firewall, and second is edit the config.development.json and replace the url https://localhost:2368 with the servers ip address http://192.168.1.100:2368.  Make the same change to the host but just use the ip address "localhost" to the servers ip address "192.168.1.100"</p><p>If you change the config.development.json you can use the ghost stop and start command to stop ghost and restart it with the new settings</p><pre><code>ghost stop
+ghost start</code></pre><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.14.55-PM.png" class="kg-image" alt loading="lazy" width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-06-at-2.14.55-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-06-at-2.14.55-PM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.14.55-PM.png 1120w" sizes="(min-width: 720px) 720px"></figure><p>You now have working ghost site.  Go to the the ip address and add /ghost to the end to get to the admin interface (http://192.168.1.100:2368/ghost)  Create your accounta and let ghost setup the initial website.</p><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-8.34.43-AM.png" class="kg-image" alt loading="lazy" width="1124" height="700" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-8.34.43-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-8.34.43-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-8.34.43-AM.png 1124w" sizes="(min-width: 720px) 720px"></figure><p>4. Setup github</p><p>Within the ghost site directory create a folder named github.  Change Directory into the new folder and create the upload.sh script.</p><pre><code>mkdir github
+cd github</code></pre><p>From your github.com account create a new repo "username.github.io"  </p><p>In your new repo go to "Settings"</p><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.20.18-AM.png" class="kg-image" alt loading="lazy" width="1299" height="787" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.20.18-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.20.18-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.20.18-AM.png 1299w" sizes="(min-width: 720px) 720px"></figure><p>Select "Pages"</p><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.21.14-AM.png" class="kg-image" alt loading="lazy" width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.21.14-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.21.14-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.21.14-AM.png 1304w" sizes="(min-width: 720px) 720px"></figure><p>Set the source to "master"</p><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.08-AM.png" class="kg-image" alt loading="lazy" width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.22.08-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.22.08-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.08-AM.png 1304w" sizes="(min-width: 720px) 720px"></figure><p>Save the settings to setup the website publishing, note it can take 30 minutes for the site to become live.  Since we have not actually uploaded any pages yet this should not be a problem.</p><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.18-AM.png" class="kg-image" alt loading="lazy" width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.22.18-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.22.18-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.18-AM.png 1304w" sizes="(min-width: 720px) 720px"></figure><p>Note the url of your new website (Your site is ready to be publshed at https://username.github.io) You will need this address for modifying the script to set all the links to the correct url.</p><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.26-AM.png" class="kg-image" alt loading="lazy" width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.22.26-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.22.26-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.26-AM.png 1304w" sizes="(min-width: 720px) 720px"></figure><p>Now on your server from inside the github directory you just created setup your git project and connect it to github.  Be sure to replace user and repo.git with your git username and your repo name.</p><p></p><pre><code>sudo dnf install git
+git init
+git remote add origin http://github.com/USERNAME/REPOSITORY.git
+git remote -v
+</code></pre><p>Create and edit the upload.sh file with nano, past in the script below and make the necessary changes to the gssg line to match your computers setup and change the url to match the github pages url setup earlier.</p><pre><code>nano upload.sh</code></pre><pre><code>#!/bin/bash
+
+# this script will create a static version of your ghost site in a folder named docs
+# then upload the new static version of your site to your github pages project
+# github will then publish the static pages
+
+
+# replace "ghostserver" with your actual server url
+# replace "you.github.io" with your github pages url
+
+gssg --domain "http://ghostserver:2368" --dest "docs" --url 'https://you.github.io'
+
+# prepare changes for git
+git add * &amp;&amp; \
+git add -u &amp;&amp; \
+
+# you can change the statement with whatever you with to show on github in the comments
+git commit -m "autoupload changes via publish.sh script"
+
+# push changes to github
+git push</code></pre><p>Change the permissions on the script to execute.</p><pre><code>chmod u+x upload.sh</code></pre><p>Now that you have linked your local machine to the git repo and created the first file for the repo we need to setup git to remember your username and password so the script can run without requireing authentication.   Please note if you are using two-factor authentication with github you will need to setup and use a personal access token instead of a password.</p><pre><code>git config --global credential.helper store
+git add *
+git commit -m "first commit"
+git push --set-upstream https://github.com/mjh2901/demoweb.git master
+</code></pre><p>Now change the permissions (again) and run the script</p><pre><code>sudo chmod u+x upload.sh
+./upload.sh</code></pre><p>Go back to git hub (Last time) to the pages interface, you should now be able to select the /docs folder as the website location</p><figure class="kg-card kg-image-card"><img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.33.50-AM.png" class="kg-image" alt loading="lazy" width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.33.50-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.33.50-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.33.50-AM.png 1304w" sizes="(min-width: 720px) 720px"></figure><p>Now go to your ghost website published on github</p>
+        </section>
+
+
+    </article>
+</main>
+
+<section class="footer-cta">
+    <div class="inner">
+        <h2>Sign up for more like this.</h2>
+        <a class="footer-cta-button" href="#/portal">
+            <div>Enter your email</div>
+            <span>Subscribe</span>
+        </a>
+    </div>
+</section>
+
+
+<aside class="read-more-wrap">
+    <div class="read-more inner">
+
+
+                    
+<article class="post-card post featured ">
+
+    <a class="post-card-image-link" href="/rocky-linux-install/">
+        <img class="post-card-image"
+            srcset="/content/images/size/w300/2021/10/rocky_linux_install.png 300w,
+                    /content/images/size/w600/2021/10/rocky_linux_install.png 600w,
+                    /content/images/size/w1000/2021/10/rocky_linux_install.png 1000w,
+                    /content/images/size/w2000/2021/10/rocky_linux_install.png 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="/content/images/size/w600/2021/10/rocky_linux_install.png"
+            alt="Rocky Linux, Install"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/rocky-linux-install/">
+            <header class="post-card-header">
+                <h2 class="post-card-title">Rocky Linux, Install</h2>
+            </header>
+            <div class="post-card-excerpt">
+                <p>How to install Rocky Linux. Object:  Install Rocky Linux Narrative: "Rocky Linux is a community enterprise operating system designed to be 100% bug-for-bug compatible with America's top enterprise Linux distribution now that its downstream partner has shifted direction. It is under intensive development by the community. Rocky Linux is led</p>
+            </div>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="/author/mike/" class="static-avatar">
+                        <img class="author-profile-image" src="//www.gravatar.com/avatar/2f7d8a3a1c43e2ac7fdc78fa07b90cd6?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Mike Hathaway" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/mike/">Mike Hathaway</a></span>
+                <span class="post-card-byline-date"><time datetime="2021-10-02">Oct 2, 2021</time> <span class="bull">&bull;</span> 4 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                    
+<article class="post-card post featured ">
+
+    <a class="post-card-image-link" href="/code/">
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1622569569947-208e843daaa5?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDM0fHxyb2d1ZXxlbnwwfHx8fDE2MzI2OTU2MzM&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 300w,
+                    https://images.unsplash.com/photo-1622569569947-208e843daaa5?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDM0fHxyb2d1ZXxlbnwwfHx8fDE2MzI2OTU2MzM&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 600w,
+                    https://images.unsplash.com/photo-1622569569947-208e843daaa5?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDM0fHxyb2d1ZXxlbnwwfHx8fDE2MzI2OTU2MzM&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 1000w,
+                    https://images.unsplash.com/photo-1622569569947-208e843daaa5?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDM0fHxyb2d1ZXxlbnwwfHx8fDE2MzI2OTU2MzM&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="https://images.unsplash.com/photo-1622569569947-208e843daaa5?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDM0fHxyb2d1ZXxlbnwwfHx8fDE2MzI2OTU2MzM&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
+            alt="Ghostly hand made of smoke"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/code/">
+            <header class="post-card-header">
+                <h2 class="post-card-title">Why Ghost on Github Pages</h2>
+            </header>
+            <div class="post-card-excerpt">
+                <p>How to setup a ghost server and publish a static version of your site to github</p>
+            </div>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="/author/mike/" class="static-avatar">
+                        <img class="author-profile-image" src="//www.gravatar.com/avatar/2f7d8a3a1c43e2ac7fdc78fa07b90cd6?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Mike Hathaway" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/mike/">Mike Hathaway</a></span>
+                <span class="post-card-byline-date"><time datetime="2021-09-26">Sep 26, 2021</time> <span class="bull">&bull;</span> 3 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+                    
+<article class="post-card post ">
+
+    <a class="post-card-image-link" href="/first-post-to-ghost/">
+        <img class="post-card-image"
+            srcset="/content/images/size/w300/2021/09/yosemite_cover-4.png 300w,
+                    /content/images/size/w600/2021/09/yosemite_cover-4.png 600w,
+                    /content/images/size/w1000/2021/09/yosemite_cover-4.png 1000w,
+                    /content/images/size/w2000/2021/09/yosemite_cover-4.png 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="/content/images/size/w600/2021/09/yosemite_cover-4.png"
+            alt="First Post to Ghost"
+            loading="lazy"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/first-post-to-ghost/">
+            <header class="post-card-header">
+                <h2 class="post-card-title">First Post to Ghost</h2>
+            </header>
+            <div class="post-card-excerpt">
+                <p>This is the first post created in the Ghost CMS.  This site is posted on GitHub Pages using the Ghost Static Site Generator, git and a short shell script.</p>
+            </div>
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="/author/mike/" class="static-avatar">
+                        <img class="author-profile-image" src="//www.gravatar.com/avatar/2f7d8a3a1c43e2ac7fdc78fa07b90cd6?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Mike Hathaway" />
+                    </a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="/author/mike/">Mike Hathaway</a></span>
+                <span class="post-card-byline-date"><time datetime="2021-09-26">Sep 26, 2021</time> <span class="bull">&bull;</span> 1 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+    </div>
+</aside>
+
+
+    </div>
+
+    <footer class="site-footer outer">
+        <div class="inner">
+            <section class="copyright"><a href="https://mikehathaway.com">Mike Hathaway</a> &copy; 2021</section>
+            <nav class="site-footer-nav">
+                <ul class="nav">
+    <li class="nav-data-privacy"><a href="https://mikehathaway.com/privacy/">Data &amp; privacy</a></li>
+</ul>
+
+            </nav>
+            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+</script>
+<script src="/assets/built/casper.js?v=d2b0c6e553"></script>
+<script>
+$(document).ready(function () {
+    // Mobile Menu Trigger
+    $('.gh-burger').click(function () {
+        $('body').toggleClass('gh-head-open');
+    });
+    // FitVids - Makes video embeds responsive
+    $(".gh-content").fitVids();
+});
+</script>
+
+
+
+</body>
+</html>
