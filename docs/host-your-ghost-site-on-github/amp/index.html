@@ -14,9 +14,9 @@
     <meta property="og:title" content="Host your ghost site on GitHub" />
     <meta property="og:description" content="Let GitHub pay your hosting bill GitHub Pages is one of those features that is extremely that I think many do not realize the power and potential of.  Git hub pages hosts static content, the internal pages you can create for projects or in repositories uses Jekyll a static site" />
     <meta property="og:url" content="https://mikehathaway.com/host-your-ghost-site-on-github/" />
-    <meta property="og:image" content="https://mikehathaway.com/content/images/2021/10/ghost_on_github.png" />
+    <meta property="og:image" content="https://mikehathaway.com/content/images/2022/03/ghost_on_github.png" />
     <meta property="article:published_time" content="2021-10-06T19:28:00.000Z" />
-    <meta property="article:modified_time" content="2021-10-08T04:35:03.000Z" />
+    <meta property="article:modified_time" content="2022-03-13T16:14:01.000Z" />
     <meta property="article:tag" content="Ghost" />
     <meta property="article:tag" content="Github" />
     <meta property="article:tag" content="How To" />
@@ -28,7 +28,7 @@
     <meta name="twitter:title" content="Host your ghost site on GitHub" />
     <meta name="twitter:description" content="Let GitHub pay your hosting bill GitHub Pages is one of those features that is extremely that I think many do not realize the power and potential of.  Git hub pages hosts static content, the internal pages you can create for projects or in repositories uses Jekyll a static site" />
     <meta name="twitter:url" content="https://mikehathaway.com/host-your-ghost-site-on-github/" />
-    <meta name="twitter:image" content="https://mikehathaway.com/content/images/2021/10/ghost_on_github.png" />
+    <meta name="twitter:image" content="https://mikehathaway.com/content/images/2022/03/ghost_on_github.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Mike Hathaway" />
     <meta name="twitter:label2" content="Filed under" />
@@ -62,7 +62,7 @@
             "width": 250,
             "height": 250
         },
-        "url": "https://mikehathaway.com/author/mike/",
+        "url": "https://mikehathaway.com/author/mike-2/",
         "sameAs": [
             "https://mikehathaway.com",
             "https://www.facebook.com/mikehathaway",
@@ -72,10 +72,10 @@
     "headline": "Host your ghost site on GitHub",
     "url": "https://mikehathaway.com/host-your-ghost-site-on-github/",
     "datePublished": "2021-10-06T19:28:00.000Z",
-    "dateModified": "2021-10-08T04:35:03.000Z",
+    "dateModified": "2022-03-13T16:14:01.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "https://mikehathaway.com/content/images/2021/10/ghost_on_github.png",
+        "url": "https://mikehathaway.com/content/images/2022/03/ghost_on_github.png",
         "width": 1920,
         "height": 1080
     },
@@ -88,7 +88,7 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 4.16" />
+    <meta name="generator" content="Ghost 4.38" />
     <link rel="alternate" type="application/rss+xml" title="Mike Hathaway" href="https://mikehathaway.com/rss/" />
 
     <style amp-custom>
@@ -364,6 +364,19 @@
         background: var(--ghost-accent-color, #1292EE);
     }
 
+    .post-content blockquote.kg-blockquote-alt {
+        font-size: 1.2em;
+        font-style: italic;
+        line-height: 1.6em;
+        text-align: center;
+        color: #738a94;
+        padding: 0.75em 3em 1.25em;
+    }
+
+    .post-content blockquote.kg-blockquote-alt::before {
+        display: none;
+    }
+
     .post-content :not(.kg-card):not([id]) + .kg-card {
         margin-top: 40px;
     }
@@ -458,7 +471,7 @@
         background: rgba(255,255,255,0.6);
         font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 3px;
         box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.4);
         overflow: hidden;
     }
@@ -538,6 +551,398 @@
     .kg-bookmark-publisher::before {
         content: "•";
         margin: 0 .5em;
+    }
+
+    .kg-toggle-card-icon {
+        display: none;
+    }
+
+    .kg-toggle-content {
+        margin-top: 0.8rem;
+    }
+
+    .kg-product-card-container {
+        background: transparent;
+        padding: 20px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 1px rgb(124 139 154 / 25%);
+    }
+
+    .kg-product-card-description p {
+        margin-top: 1.5em;
+    }
+
+    .kg-product-card-description ul {
+        margin-left: 24px;
+    }
+
+    .kg-product-card-title {
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
+
+    .kg-product-card-rating-star {
+        height: 28px;
+        width: 20px;
+        margin-right: 2px;
+    }
+
+    .kg-product-card-rating-star svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    opacity: 0.15;
+    }
+
+    .kg-product-card-rating-active.kg-product-card-rating-star svg {
+    opacity: 1;
+    }
+
+    .kg-nft-card-container {
+        position: relative;
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        text-decoration: none;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        box-shadow: 0 2px 6px -2px rgb(0 0 0 / 10%), 0 0 1px rgb(0 0 0 / 40%);
+        width: 100%;
+        max-width: 512px;
+        color: #15212A;
+        background: #fff;
+        border-radius: 5px;
+        transition: none;
+        margin: 0 auto;
+    }
+
+    .kg-nft-metadata {
+        padding: 2.0rem;
+    }
+
+    .kg-nft-image-container {
+        position: relative;
+    }
+
+    .kg-nft-image {
+        display: flex;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .kg-nft-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .kg-nft-header h4.kg-nft-title {
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin: 0;
+        color: #15212A;
+    }
+
+    .kg-nft-header amp-img {
+        max-width: 114px;
+        max-height: 26px;
+    }
+
+    .kg-nft-opensea-logo {
+        margin-top: 2px;
+        width: 100px;
+    }
+
+    .kg-nft-creator {
+        font-family: inherit;
+        color: #95A1AD;
+    }
+
+    .kg-nft-creator span {
+        font-weight: 500;
+        color: #15212A;
+    }
+
+    .kg-nft-card p.kg-nft-description {
+        font-size: 1.4rem;
+        line-height: 1.4em;
+        margin: 2.0rem 0 0;
+        color: #222;
+    }
+
+    .kg-button-card {
+        display: flex;
+        position: static;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .kg-btn {
+        display: flex;
+        position: static;
+        align-items: center;
+        padding: 0 2.0rem;
+        height: 4.0rem;
+        line-height: 4.0rem;
+        font-size: 1.65rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .kg-btn:hover {
+        opacity: 0.85;
+    }
+
+    .kg-btn-accent {
+        background-color: var(--ghost-accent-color, #1292EE);
+        color: #fff;
+    }
+
+    .kg-callout-card {
+        display: flex;
+        padding: 20px 28px;
+        border-radius: 3px;
+    }
+
+    .kg-callout-card-grey {
+        background: rgba(124, 139, 154, 0.13);
+    }
+
+    .kg-callout-card-white {
+        background: transparent;
+        box-shadow: inset 0 0 0 1px rgba(124, 139, 154, 0.25);
+    }
+
+    .kg-callout-card-blue {
+        background: rgba(33, 172, 232, 0.12);
+    }
+
+    .kg-callout-card-green {
+        background: rgba(52, 183, 67, 0.12);
+    }
+
+    .kg-callout-card-yellow {
+        background: rgba(240, 165, 15, 0.13);
+    }
+
+    .kg-callout-card-red {
+        background: rgba(209, 46, 46, 0.11);
+    }
+
+    .kg-callout-card-pink {
+        background: rgba(225, 71, 174, 0.11);
+    }
+
+    .kg-callout-card-purple {
+        background: rgba(135, 85, 236, 0.12);
+    }
+
+    .kg-callout-card-accent {
+        background: var(--ghost-accent-color);
+        color: #fff;
+    }
+
+    .kg-callout-card-accent a {
+        color: #fff;
+    }
+
+    .kg-callout-emoji {
+        padding-right: 16px;
+        line-height: 1.3;
+        font-size: 1.25em;
+    }
+
+    .kg-header-card {
+        padding: 6em 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .kg-header-card.kg-size-small {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+    .kg-header-card.kg-size-large {
+        padding-top: 12em;
+        padding-bottom: 12em;
+    }
+
+    .kg-header-card.kg-width-full {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    .kg-header-card.kg-align-left {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .kg-header-card.kg-style-dark {
+        background: #15171a;
+        color: #ffffff;
+    }
+
+    .kg-header-card.kg-style-light {
+        color: #15171a;
+        border: 1px solid rgba(124, 139, 154, 0.25);
+        border-width: 1px 0;
+    }
+
+    .kg-header-card.kg-style-accent {
+        background-color: var(--ghost-accent-color);
+    }
+
+    .kg-header-card.kg-style-image {
+        background-color: #e7e7eb;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .kg-header-card h2 {
+        font-size: 4em;
+        font-weight: 700;
+        line-height: 1.1em;
+        margin: 0;
+    }
+
+    .kg-header-card h2 strong {
+        font-weight: 800;
+    }
+
+    .kg-header-card.kg-size-small h2 {
+        font-size: 3em;
+    }
+
+    .kg-header-card.kg-size-large h2 {
+        font-size: 5em;
+    }
+
+    .kg-header-card h3 {
+        font-size: 1.25em;
+        font-weight: 500;
+        line-height: 1.3em;
+        margin: 0;
+    }
+
+    .kg-header-card h3 strong {
+        font-weight: 600;
+    }
+
+    .kg-header-card.kg-size-small h3 {
+        font-size: 1em;
+    }
+
+    .kg-header-card.kg-size-large h3 {
+        font-size: 1.5em;
+    }
+
+    .kg-header-card:not(.kg-style-light) h2,
+    .kg-header-card:not(.kg-style-light) h3 {
+        color: #ffffff;
+    }
+
+    .kg-header-card a.kg-header-card-button {
+        display: flex;
+        position: static;
+        align-items: center;
+        padding: 0 1.2em;
+        height: 2.4em;
+        line-height: 1em;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-size: 0.95em;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: opacity 0.2s ease-in-out;
+        background-color: var(--ghost-accent-color);
+        color: #ffffff;
+        margin: 1.75em 0 0;
+    }
+
+    .kg-header-card a.kg-header-card-button:hover {
+        opacity: 0.85;
+    }
+
+    .kg-header-card.kg-size-large a.kg-header-card-button {
+        margin-top: 2em;
+    }
+
+    .kg-header-card.kg-size-small a.kg-header-card-button {
+        margin-top: 1.5em;
+    }
+
+    .kg-header-card.kg-style-image a.kg-header-card-button,
+    .kg-header-card.kg-style-dark a.kg-header-card-button {
+        background: #ffffff;
+        color: #15171a;
+    }
+
+    .kg-header-card.kg-style-accent a.kg-header-card-button {
+        background: #ffffff;
+        color: var(--ghost-accent-color);
+    }
+
+    .kg-audio-card {
+        display: flex;
+        width: 100%;
+        box-shadow: inset 0 0 0 1px rgba(124, 139, 154, 0.25);
+    }
+
+    .kg-audio-thumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+        background: transparent;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .kg-audio-thumbnail.placeholder {
+        background: var(--ghost-accent-color);
+    }
+
+    .kg-audio-thumbnail.placeholder svg {
+        width: 24px;
+        height: 24px;
+        fill: white;
+    }
+
+    .kg-audio-player-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        --seek-before-width: 0%;
+        --volume-before-width: 100%;
+        --buffered-width: 0%;
+    }
+
+    .kg-audio-title {
+        width: 100%;
+        padding: 8px 12px 0;
+        border: none;
+        font-family: inherit;
+        font-size: 1.1em;
+        font-weight: 700;
+        background: transparent;
+    }
+
+    .kg-audio-player {
+        display: none;
     }
 
     .kg-width-full.kg-card-hascaption {
@@ -677,7 +1082,7 @@
                 </section>
             </header>
             <figure class="post-image">
-                <amp-img src="https://mikehathaway.com/content/images/2021/10/ghost_on_github.png" width="600" height="340" layout="responsive"></amp-img>
+                <amp-img src="https://mikehathaway.com/content/images/2022/03/ghost_on_github.png" width="600" height="340" layout="responsive"></amp-img>
             </figure>
             <section class="post-content">
 
@@ -685,13 +1090,13 @@
 sudo dnf install wget
 sudo dnf module list nodejs
 sudo dnf module install nodejs:14
-node -v</code></pre><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-12.38.58-PM.png" class="kg-image" alt width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-06-at-12.38.58-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-06-at-12.38.58-PM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-12.38.58-PM.png 1120w" layout="responsive"></amp-img></figure><p>2. Setup Ghost &amp; Ghost Static Site Generator</p><p>We will be install the ghost-cli and use that cli to deploy ghost.</p><pre><code>sudo npm install ghost-cli@latest -g
-sudo npm install -g ghost-static-site-generator</code></pre><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.06.25-PM.png" class="kg-image" alt width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-06-at-2.06.25-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-06-at-2.06.25-PM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.06.25-PM.png 1120w" layout="responsive"></amp-img></figure><p>3. Setup and start a ghost website</p><p>From the user home directory create a folder for the ghost site.  Then enter that directory and install ghost, which will also activate the ghost server. </p><pre><code>mkdir mysite.ghost
+node -v</code></pre><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-06-at-12.38.58-PM-1.png" class="kg-image" alt width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2022/03/Screen-Shot-2021-10-06-at-12.38.58-PM-1.png 600w, https://mikehathaway.com/content/images/size/w1000/2022/03/Screen-Shot-2021-10-06-at-12.38.58-PM-1.png 1000w, https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-06-at-12.38.58-PM-1.png 1120w" layout="responsive"></amp-img></figure><p>2. Setup Ghost &amp; Ghost Static Site Generator</p><p>We will be install the ghost-cli and use that cli to deploy ghost.</p><pre><code>sudo npm install ghost-cli@latest -g
+sudo npm install -g ghost-static-site-generator</code></pre><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-06-at-2.06.25-PM.png" class="kg-image" alt width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2022/03/Screen-Shot-2021-10-06-at-2.06.25-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2022/03/Screen-Shot-2021-10-06-at-2.06.25-PM.png 1000w, https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-06-at-2.06.25-PM.png 1120w" layout="responsive"></amp-img></figure><p>3. Setup and start a ghost website</p><p>From the user home directory create a folder for the ghost site.  Then enter that directory and install ghost, which will also activate the ghost server. </p><pre><code>mkdir mysite.ghost
 cd mysite.ghost
 ghost install local
-</code></pre><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.12.17-PM.png" class="kg-image" alt width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-06-at-2.12.17-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-06-at-2.12.17-PM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.12.17-PM.png 1120w" layout="responsive"></amp-img></figure><p>There are two things you may need to do.  First is open port 2368 on your firewall, and second is edit the config.development.json and replace the url https://localhost:2368 with the servers ip address http://192.168.1.100:2368.  Make the same change to the host but just use the ip address "localhost" to the servers ip address "192.168.1.100"</p><p>If you change the config.development.json you can use the ghost stop and start command to stop ghost and restart it with the new settings</p><pre><code>ghost stop
-ghost start</code></pre><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.14.55-PM.png" class="kg-image" alt width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-06-at-2.14.55-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-06-at-2.14.55-PM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-06-at-2.14.55-PM.png 1120w" layout="responsive"></amp-img></figure><p>You now have working ghost site.  Go to the the ip address and add /ghost to the end to get to the admin interface (http://192.168.1.100:2368/ghost)  Create your accounta and let ghost setup the initial website.</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-8.34.43-AM.png" class="kg-image" alt width="1124" height="700" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-8.34.43-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-8.34.43-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-8.34.43-AM.png 1124w" layout="responsive"></amp-img></figure><p>4. Setup github</p><p>Within the ghost site directory create a folder named github.  Change Directory into the new folder and create the upload.sh script.</p><pre><code>mkdir github
-cd github</code></pre><p>From your github.com account create a new repo "username.github.io"  </p><p>In your new repo go to "Settings"</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.20.18-AM.png" class="kg-image" alt width="1299" height="787" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.20.18-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.20.18-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.20.18-AM.png 1299w" layout="responsive"></amp-img></figure><p>Select "Pages"</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.21.14-AM.png" class="kg-image" alt width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.21.14-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.21.14-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.21.14-AM.png 1304w" layout="responsive"></amp-img></figure><p>Set the source to "master"</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.08-AM.png" class="kg-image" alt width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.22.08-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.22.08-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.08-AM.png 1304w" layout="responsive"></amp-img></figure><p>Save the settings to setup the website publishing, note it can take 30 minutes for the site to become live.  Since we have not actually uploaded any pages yet this should not be a problem.</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.18-AM.png" class="kg-image" alt width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.22.18-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.22.18-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.18-AM.png 1304w" layout="responsive"></amp-img></figure><p>Note the url of your new website (Your site is ready to be publshed at https://username.github.io) You will need this address for modifying the script to set all the links to the correct url.</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.26-AM.png" class="kg-image" alt width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.22.26-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.22.26-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.22.26-AM.png 1304w" layout="responsive"></amp-img></figure><p>Now on your server from inside the github directory you just created setup your git project and connect it to github.  Be sure to replace user and repo.git with your git username and your repo name.</p><p></p><pre><code>sudo dnf install git
+</code></pre><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-06-at-2.12.17-PM.png" class="kg-image" alt width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2022/03/Screen-Shot-2021-10-06-at-2.12.17-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2022/03/Screen-Shot-2021-10-06-at-2.12.17-PM.png 1000w, https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-06-at-2.12.17-PM.png 1120w" layout="responsive"></amp-img></figure><p>There are two things you may need to do.  First is open port 2368 on your firewall, and second is edit the config.development.json and replace the url https://localhost:2368 with the servers ip address http://192.168.1.100:2368.  Make the same change to the host but just use the ip address "localhost" to the servers ip address "192.168.1.100"</p><p>If you change the config.development.json you can use the ghost stop and start command to stop ghost and restart it with the new settings</p><pre><code>ghost stop
+ghost start</code></pre><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-06-at-12.38.58-PM.png" class="kg-image" alt width="1120" height="510" srcset="https://mikehathaway.com/content/images/size/w600/2022/03/Screen-Shot-2021-10-06-at-12.38.58-PM.png 600w, https://mikehathaway.com/content/images/size/w1000/2022/03/Screen-Shot-2021-10-06-at-12.38.58-PM.png 1000w, https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-06-at-12.38.58-PM.png 1120w" layout="responsive"></amp-img></figure><p>You now have working ghost site.  Go to the the ip address and add /ghost to the end to get to the admin interface (http://192.168.1.100:2368/ghost)  Create your accounta and let ghost setup the initial website.</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-8.34.43-AM.png" class="kg-image" alt width="1124" height="700" srcset="https://mikehathaway.com/content/images/size/w600/2022/03/Screen-Shot-2021-10-07-at-8.34.43-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2022/03/Screen-Shot-2021-10-07-at-8.34.43-AM.png 1000w, https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-8.34.43-AM.png 1124w" layout="responsive"></amp-img></figure><p>4. Setup github</p><p>Within the ghost site directory create a folder named github.  Change Directory into the new folder and create the upload.sh script.</p><pre><code>mkdir github
+cd github</code></pre><p>From your github.com account create a new repo "username.github.io"  </p><p>In your new repo go to "Settings"</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-9.20.18-AM.png" class="kg-image" alt width="1299" height="787" srcset="https://mikehathaway.com/content/images/size/w600/2022/03/Screen-Shot-2021-10-07-at-9.20.18-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2022/03/Screen-Shot-2021-10-07-at-9.20.18-AM.png 1000w, https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-9.20.18-AM.png 1299w" layout="responsive"></amp-img></figure><p>Select "Pages"</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-9.21.14-AM.png" class="kg-image" alt width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2022/03/Screen-Shot-2021-10-07-at-9.21.14-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2022/03/Screen-Shot-2021-10-07-at-9.21.14-AM.png 1000w, https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-9.21.14-AM.png 1304w" layout="responsive"></amp-img></figure><p>Set the source to "master"</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-9.22.08-AM.png" class="kg-image" alt width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2022/03/Screen-Shot-2021-10-07-at-9.22.08-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2022/03/Screen-Shot-2021-10-07-at-9.22.08-AM.png 1000w, https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-9.22.08-AM.png 1304w" layout="responsive"></amp-img></figure><p>Save the settings to setup the website publishing, note it can take 30 minutes for the site to become live.  Since we have not actually uploaded any pages yet this should not be a problem.</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-9.22.18-AM.png" class="kg-image" alt width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2022/03/Screen-Shot-2021-10-07-at-9.22.18-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2022/03/Screen-Shot-2021-10-07-at-9.22.18-AM.png 1000w, https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-9.22.18-AM.png 1304w" layout="responsive"></amp-img></figure><p>Note the url of your new website (Your site is ready to be publshed at https://username.github.io) You will need this address for modifying the script to set all the links to the correct url.</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-9.22.26-AM.png" class="kg-image" alt width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2022/03/Screen-Shot-2021-10-07-at-9.22.26-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2022/03/Screen-Shot-2021-10-07-at-9.22.26-AM.png 1000w, https://mikehathaway.com/content/images/2022/03/Screen-Shot-2021-10-07-at-9.22.26-AM.png 1304w" layout="responsive"></amp-img></figure><p>Now on your server from inside the github directory you just created setup your git project and connect it to github.  Be sure to replace user and repo.git with your git username and your repo name.</p><p></p><pre><code>sudo dnf install git
 git init
 git remote add origin http://github.com/USERNAME/REPOSITORY.git
 git remote -v
@@ -720,7 +1125,7 @@ git add *
 git commit -m "first commit"
 git push --set-upstream https://github.com/mjh2901/demoweb.git master
 </code></pre><p>Now change the permissions (again) and run the script</p><pre><code>sudo chmod u+x upload.sh
-./upload.sh</code></pre><p>Go back to git hub (Last time) to the pages interface, you should now be able to select the /docs folder as the website location</p><figure class="kg-card kg-image-card"><amp-img src="https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.33.50-AM.png" class="kg-image" alt width="1304" height="818" srcset="https://mikehathaway.com/content/images/size/w600/2021/10/Screen-Shot-2021-10-07-at-9.33.50-AM.png 600w, https://mikehathaway.com/content/images/size/w1000/2021/10/Screen-Shot-2021-10-07-at-9.33.50-AM.png 1000w, https://mikehathaway.com/content/images/2021/10/Screen-Shot-2021-10-07-at-9.33.50-AM.png 1304w" layout="responsive"></amp-img></figure><p>Now go to your ghost website published on github</p>
+./upload.sh</code></pre><p>Go back to git hub (Last time) to the pages interface, you should now be able to select the /docs folder as the website location</p><p>Now go to your ghost website published on github</p>
 
             </section>
 
